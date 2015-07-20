@@ -1,5 +1,4 @@
 var treeHolder = document.getElementById("tree-holder");
-var treeHolderContent = "";
 
 var Tree = function(name, leaf_shape, type, average_height) {
   this.name = name,
@@ -16,7 +15,5 @@ var oak = new Tree("Oak", "Lobed", "Deciduous", 200);
 treeArray = [birch, larch, ponderosa, oak];
 
 for(var i=0; i < treeArray.length; i++) {
-  treeHolderContent += "<p>" + JSON.stringify(treeArray[i]) + "</p>";
+  treeHolder.innerHTML += "<p>" + JSON.stringify(treeArray[i]) + "</p>";
 }
-
-treeHolder.innerHTML = treeHolderContent;
