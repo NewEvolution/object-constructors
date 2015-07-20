@@ -10,7 +10,7 @@ var Tree = function(name, leaf_shape, type, average_height) {
 
 var birch = new Tree("Birch", "Serrate", "Deciduous", 50);
 var larch = new Tree("Larch", "Needle", "Deciduous", 140);
-var ponderosa = new Tree("Ponderosa Pine", "Needle", "Evergreen", 60);
+var ponderosa = new Tree("Ponderosa Pine", "Needle", "Coniferous", 60);
 var oak = new Tree("Oak", "Lobed", "Deciduous", 200);
 
 treeArray = [birch, larch, ponderosa, oak];
