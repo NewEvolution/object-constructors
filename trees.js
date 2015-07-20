@@ -15,5 +15,8 @@ var oak = new Tree("Oak", "Lobed", "Deciduous", 200);
 treeArray = [birch, larch, ponderosa, oak];
 
 for(var i=0; i < treeArray.length; i++) {
-  treeHolder.innerHTML += "<p>" + JSON.stringify(treeArray[i]) + "</p>";
+  treeHolder.innerHTML += "<div><h2>" + treeArray[i].name + "</h2>" +
+    "<ul><li><strong>Leaf Shape:</strong> " + treeArray[i]["leaf shape"] + "</li>" +
+    "<li><strong>Type:</strong> " + treeArray[i].type + "</li>" +
+    "<li><strong>Average Height (ft):</strong> " + treeArray[i]["average height"] + "</li></ul></div>";
 }
